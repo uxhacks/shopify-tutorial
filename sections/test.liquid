@@ -1,0 +1,46 @@
+<div class="test-section">
+    <h1 style="color:{{section.settings.test-color}}; text-align:{{section.settings.test-align}}">Test Section</h1>
+</div>
+
+{% schema %}
+  {
+    "name": "Test Section",
+    "settings": [
+        {
+        "id": "test-color",
+        "type": "color",
+        "label": "Color",
+        "default": "#000"
+        },
+        {
+        "id": "test-align",
+        "type": "select",
+        "label": "Alignment",
+        "default": "left",
+        "options": [
+            {
+            "value": "left",
+            "label": "Left"
+            },
+            {
+            "value": "center",
+            "label": "Center"
+            },
+            {
+            "value": "right",
+            "label": "Right"
+            }
+        ]
+        }
+    ],
+    "presets": [
+        {
+        "name": "Test Section",
+        "category": "Test Category"
+        }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
