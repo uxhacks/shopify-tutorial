@@ -25,7 +25,7 @@
 - Install [Themekit](http://shopify.github.io/themekit)
 - Download Theme with Theme Kit (Terminal)
                 theme get -p=[your-password] -s=[your-store.myshopify.com] -t=[your-theme-id]
-- Install Node Wrapper for Theme Kit (https://www.npmjs.com/package/@shopify/themekit)
+- Install [Node Wrapper for Theme Kit](https://www.npmjs.com/package/@shopify/themekit)
 
 ## Set up Sass
 - Install [Sass](https://sass-lang.com/install)
