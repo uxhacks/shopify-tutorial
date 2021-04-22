@@ -8,7 +8,7 @@
 - Enable Theme Read/Write Access
 
 ## Set up Git
-- Install Git
+- Install [Git](https://git-scm.com/)
 - Create Folder for Shopify Theme (Terminal)
                 mkdir shopify-project
                 cd shopify-project
@@ -36,26 +36,29 @@
 - Create [Gulpfile.js](https://github.com/uxhacks/shopify-tutorial/blob/master/gulpfile.js) File
 - Write Tasks (sass, watch, clean)
 
-                const gulp = require('gulp');
-                const themeKit = require('@shopify/themekit');
-                const sass = require('gulp-sass');
-                const clean = require('gulp-clean-css');
+```js
+const gulp = require('gulp');
+const themeKit = require('@shopify/themekit');
+const sass = require('gulp-sass');
+const clean = require('gulp-clean-css');
 
-                gulp.task('sass', function() {
-                    return gulp.src('scss/global.scss')
-                    .pipe(sass())
-                    .pipe(clean( { compatibility: 'ie11' }))
-                    .pipe(gulp.dest('assets'))
-                });
+gulp.task('sass', function() {
+    return gulp.src('scss/global.scss')
+    .pipe(sass())
+    .pipe(clean( { compatibility: 'ie11' }))
+    .pipe(gulp.dest('assets'))
+});
 
-                gulp.task('watch', function() {
-                    gulp.watch('scss/*.scss', gulp.series('sass'))
-                    themeKit.command('watch', {
-                        allowLive: true,
-                        env: 'development'
-                    })
-                });
+gulp.task('watch', function() {
+    gulp.watch('scss/*.scss', gulp.series('sass'))
+    themeKit.command('watch', {
+        allowLive: true,
+        env: 'development'
+    })
+});
+```
 - Add CSS file to theme.liquid inside of the head
+- Minify CSS with [Gulp Clean](https://github.com/peter-vilja/gulp-clean)
 
 ![Liquid Stylesheet](https://github.com/uxhacks/shopify-tutorial/blob/master/tutorial/images/theme-liquid-gulpfile-js.png?raw=true "Adding Styles in Shopify Liquid")
 
