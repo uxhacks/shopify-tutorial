@@ -10,21 +10,31 @@
 ## Set up Git
 - Install [Git](https://git-scm.com/)
 - Create Folder for Shopify Theme (Terminal)
-                mkdir shopify-project
-                cd shopify-project
+```terminal
+mkdir shopify-project
+cd shopify-project
+```
 - Create Git Repository with [Github](https://github.com)
-                git init
+```terminal
+git init
+```
 - Sync Folder to Git Repository
-                git remote add origin [repository url](https://docs.github.com/en/github/getting-started-with-github/about-remote-repositories)
+```terminal
+git remote add origin [repository url](https://docs.github.com/en/github/getting-started-with-github/about-remote-repositories)
+```
 - Commit Progress
-                git add -A
-                git commit -m "initial commit"
-                git push origin master
+```terminal
+git add -A
+git commit -m "initial commit"
+git push origin master
+```
 
 ## Set up Themekit
 - Install [Themekit](http://shopify.github.io/themekit)
 - Download Theme with Theme Kit (Terminal)
-                theme get -p=[your-password] -s=[your-store.myshopify.com] -t=[your-theme-id]
+```terminal
+theme get -p=[your-password] -s=[your-store.myshopify.com] -t=[your-theme-id]
+```
 - Install [Node Wrapper for Theme Kit](https://www.npmjs.com/package/@shopify/themekit)
 
 ## Set up Sass
