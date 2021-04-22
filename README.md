@@ -18,9 +18,9 @@ cd shopify-project
 ```terminal
 git init
 ```
-- Sync Folder to Git Repository
+- [Sync Folder to Git Repository](https://docs.github.com/en/github/getting-started-with-github/managing-remote-repositories)
 ```terminal
-git remote add origin [repository url](https://docs.github.com/en/github/getting-started-with-github/about-remote-repositories)
+git remote add origin [repository url]
 ```
 - Commit Progress
 ```terminal
