@@ -35,6 +35,7 @@
 - Install [Gulp](https://gulpjs.com/docs/en/getting-started/quick-start)
 - Create [Gulpfile.js](https://github.com/uxhacks/shopify-tutorial/blob/master/gulpfile.js) File
 - Write Tasks (sass, watch, clean)
+
                 const gulp = require('gulp');
                 const themeKit = require('@shopify/themekit');
                 const sass = require('gulp-sass');
