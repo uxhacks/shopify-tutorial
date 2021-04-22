@@ -10,20 +10,20 @@
 ## Set up Git
 - Install [Git](https://git-scm.com/)
 - Create Folder for Shopify Theme (Terminal)
-```terminal
+```curl
 mkdir shopify-project
 cd shopify-project
 ```
 - Create Git Repository with [Github](https://github.com)
-```terminal
+```curl
 git init
 ```
 - [Sync Folder to Git Repository](https://docs.github.com/en/github/getting-started-with-github/managing-remote-repositories)
-```terminal
+```curl
 git remote add origin [repository url]
 ```
 - Commit Progress
-```terminal
+```curl
 git add -A
 git commit -m "initial commit"
 git push origin master
@@ -36,6 +36,9 @@ git push origin master
 theme get -p=[your-password] -s=[your-store.myshopify.com] -t=[your-theme-id]
 ```
 - Install [Node Wrapper for Theme Kit](https://www.npmjs.com/package/@shopify/themekit)
+```curl
+npm install @shopify/themekit
+```
 
 ## Set up Sass
 - Install [Sass](https://sass-lang.com/install)
@@ -67,8 +70,8 @@ gulp.task('watch', function() {
     })
 });
 ```
-- Add CSS file to theme.liquid inside of the head
 - Minify CSS with [Gulp Clean](https://github.com/peter-vilja/gulp-clean)
+- Add CSS file to theme.liquid inside of the head
 
 ![Liquid Stylesheet](https://github.com/uxhacks/shopify-tutorial/blob/master/tutorial/images/theme-liquid-gulpfile-js.png?raw=true "Adding Styles in Shopify Liquid")
 
