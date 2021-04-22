@@ -57,7 +57,7 @@
                 });
 - Add CSS file to theme.liquid inside of the head
 
-![Liquid Stylesheet](tutorial\images\theme-liquid-gulpfile-js.png "Adding Styles in Shopify Liquid")
+[Liquid Stylesheet](tutorial\images\theme-liquid-gulpfile-js.png "Adding Styles in Shopify Liquid")
 
 ## Customizing Your Theme
 - Edit Shopify Theme Code
